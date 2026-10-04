@@ -17,10 +17,12 @@ jobs:
 
       - uses: jdx/mise-action@v5
       # BEGIN
-      - name: Install dependensies
+      - name: Install dependencies
         run: make setup
       - name: Run lint
         run: make lint
-      - name: Run test
+      - name: Run tests
         run: make test
+      - name: Print Hello From Hexlet
+        run: hexlet-components/hello-from-hexlet-action@release
       # END
